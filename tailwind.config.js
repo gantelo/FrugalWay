@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -13,6 +16,7 @@ module.exports = {
 			},
 		},
 		colors: {
+			...colors,
 			primary: '#C7E9B0',
 			primaryLight: '#DDFFBB',
 			secondary: '#A4BC92',

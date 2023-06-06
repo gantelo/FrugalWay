@@ -11,7 +11,7 @@ describe('Header', () => {
 	it('renders header full', () => {
 		render(<Header />);
 
-		const link = screen.getByRole('link');
+		const link = screen.getByText('The Frugal Way');
 
 		expect(link).toBeInTheDocument();
 	});
