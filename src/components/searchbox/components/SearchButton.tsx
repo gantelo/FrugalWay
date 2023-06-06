@@ -5,7 +5,7 @@ const SearchButton = () => {
 		<button
 			type="submit"
 			className="absolute right-4 top-1/3 fill-secondary peer-focus:fill-primary"
-			aria-label="search-button"
+			aria-label="Search Button"
 		>
 			<SearchIcon classes="h-4 w-4" />
 		</button>
