@@ -1,7 +1,9 @@
+import { CarouselSection } from '~/components';
+
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between">
-			<p className="justify-center content-center pt-32">tuki</p>
+		<main className="flex min-h-screen flex-col pt-32">
+			<CarouselSection />
 		</main>
 	);
 }
