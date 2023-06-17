@@ -11,8 +11,8 @@ type IconButtonProps = {
 
 const IconButton = ({ href, Icon, outlined }: IconButtonProps) => {
 	const actionClasses = outlined
-		? 'stroke-secondary hover:stroke-secondaryLight fill-none'
-		: 'fill-secondary hover:fill-secondaryLight';
+		? 'stroke-primary hover:stroke-primaryLight fill-none'
+		: 'fill-primary hover:fill-primaryLight';
 
 	return (
 		<Link href={href}>
