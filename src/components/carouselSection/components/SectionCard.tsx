@@ -1,9 +1,13 @@
-import { SectionCardImage } from '~/assets';
+import { SectionCardImage, SectionCardImageProps } from '~/assets';
 
-const SectionCard = () => {
+type SectionCardProps = {
+	card: SectionCardImageProps;
+};
+
+const SectionCard = ({ card }: SectionCardProps) => {
 	return (
 		<div className="ml-5 mt-3">
-			<SectionCardImage imagePath="vegetables/lettuce.png" title="Vegetables" color="primary" />
+			<SectionCardImage {...card} />
 		</div>
 	);
 };
