@@ -6,14 +6,22 @@ const MOCK_SECTIONS: Section[] = [
 		cards: [
 			{
 				imagePath: '/categories/lettuce.png',
-				fill: '#b0df82',
-				textColor: '#406c14',
 				title: 'Vegetables',
 			},
 			{
+				imagePath: '/categories/apple.png',
+				title: 'Fruits',
+			},
+			{
+				imagePath: '/categories/fish.png',
+				title: 'Fish & Others',
+			},
+			{
+				imagePath: '/categories/bottle.png',
+				title: 'Drinks',
+			},
+			{
 				imagePath: '/categories/meat.png',
-				fill: '#AA3C3B',
-				textColor: '#693d3d',
 				title: 'Meat',
 			},
 		],

@@ -3,20 +3,14 @@ import Image from 'next/image';
 export type SectionCardImageProps = {
 	imagePath: string;
 	title: string;
-	textColor: string;
-	fill: string;
+	textColor?: string;
+	fill?: string;
 };
 
-const SectionCardImage = ({ imagePath, textColor, fill, title }: SectionCardImageProps) => {
+const SectionCardImage = ({ imagePath, textColor, fill = '#b0df82', title }: SectionCardImageProps) => {
 	return (
 		<div className="w-64 h-32 flex ">
-			<svg
-				width="239"
-				height="133"
-				viewBox="0 0 239 133"
-				style={{ fill }}
-				xmlns="http://www.w3.org/2000/svg"
-			>
+			<svg width="239" height="133" viewBox="0 0 239 133" style={{ fill }} xmlns="http://www.w3.org/2000/svg">
 				<path
 					fillRule="evenodd"
 					clipRule="evenodd"
@@ -29,7 +23,10 @@ const SectionCardImage = ({ imagePath, textColor, fill, title }: SectionCardImag
 				/>
 			</svg>
 
-			<span className="absolute font-semibold text-xl" style={{ marginLeft: 25, marginTop: 15, color: textColor }}>
+			<span
+				className="absolute font-semibold text-xl text-primary"
+				style={{ marginLeft: 25, marginTop: 15, color: textColor }}
+			>
 				{title}
 			</span>
 
